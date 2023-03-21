@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-    <html lang="fr">
-
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +13,7 @@
 
     <body>
         <header>
-            
+            <h1>test</h1>
         </header>
     </body>
- </html>
+</html>
