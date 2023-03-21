@@ -15,15 +15,11 @@
 *::selection {
     background: var(--orange)
 }
-html{
-    height: 100%;
-}
 body {
     width: 100%;
-    height: 100%;
+    background: linear-gradient(117.29deg, #1B0067 0%, #1B0067 0.01%, #07001D 100.25%);
     background-repeat: no-repeat;
     background-size: cover;
-    background: linear-gradient(117.29deg, #1B0067 0%, #1B0067 0.01%, #07001D 100.25%);
 }
 /* ============Header============ */
 
@@ -105,6 +101,7 @@ header {
 }
 
 @media screen and (max-width: 960px){
+
     #menu{
         position: absolute;
         backdrop-filter: blur(7px);
@@ -223,3 +220,119 @@ header {
     }
 }
 /* ============Fin Header============ */
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 125px;
+}
+#signature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    user-select: none;
+}
+#signature>img{
+    width: 150%;
+}
+#mainpicture{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+#mainpicture>#bg-color-main-img{
+    width: 600px;
+    height: 600px;
+    display: flex;
+    border-radius: 100%;
+    background: linear-gradient(129.53deg, #473176 9.61%, #F39366 51.53%, #191919 93.16%);
+}
+#mainpicture>#bg-color-main-img>img{
+    width: 300%;
+}
+#infopicture{
+    margin-right: 100px;
+}
+#infopicture>h1 {
+    color: var(--orange);
+    margin-bottom: 100px;
+    font-size: 3em;
+}
+#infopicture>h2 {
+    color: white;
+    font-size: 3em;
+}
+footer{
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+footer>ul{
+    display: flex;
+    flex-direction: row;
+}
+footer>ul>li{
+    margin: 1vh;    
+}
+footer>ul>li>a{
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+footer>ul>li>a>h1{
+    font-size: 1.5em;
+}
+@media screen and (max-width: 1500px){
+    body{
+        height: 100vh;
+    }
+    main{
+        flex-direction: column;
+    }
+    #signature{
+        margin-left: 0;
+        margin-bottom: 100px;
+        align-items: center;
+
+    }
+    #infopicture{
+        margin-right: 0;
+        margin-top: 100px;
+    }
+    #infopicture>h1{
+        margin-bottom: 25px;
+    }
+}
+@media screen and (max-width: 900px){
+    footer{
+        height: 200px;
+        align-items: center;
+    }
+    footer>ul{
+        flex-direction: column;
+    }
+    #signature{
+        width: 25%;
+    }
+    #mainpicture>#bg-color-main-img{
+        width: 300px;
+        height: 300px;
+        display: flex;
+    }
+    #infopicture{
+        margin-right: 0;
+        margin-top: 100px;
+    }
+    #infopicture>h1{
+        margin-bottom: 25px;
+        font-size: 1.8em;
+    }
+    #infopicture>h2{
+        font-size: 1.5em;
+    }
+}
