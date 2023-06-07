@@ -136,11 +136,9 @@ header {
     #listeheader>ul>li>a:hover{
         border-bottom: 5px solid var(--orange);
     }
-    #burger-menu{
+    #burger-menu {
         margin-right: 25px;
         display: flex;
-    }
-    #burger-menu {
         cursor: pointer;
         height: 27px;
         width: 27px;
